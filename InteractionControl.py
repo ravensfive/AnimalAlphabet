@@ -39,7 +39,7 @@ def on_intent(intent_request, session):
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
         return handle_session_end_request()
-    elif intent_name == "AMAZON.FallbackIntent"
+    elif intent_name == "AMAZON.FallbackIntent":
         return fall_back_reponse()
     else:
         raise ValueError("Invalid intent")
