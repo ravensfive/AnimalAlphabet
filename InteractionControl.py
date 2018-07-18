@@ -5,7 +5,7 @@ import json, re, random
 def lambda_handler(event, context):
     # if skill ID does not match my ID then raise error
     if (event["session"]["application"]["applicationId"] !=
-            "amzn1.ask.skill.32109323-a7d4-4018-b21e-13f46c4223b5"):
+            "amzn1.ask.skill.85b6465e-cdd6-4d0a-b587-c33b4188a289"):
         raise ValueError("Invalid Application ID")
 
     # test if session is new
